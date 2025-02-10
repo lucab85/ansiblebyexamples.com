@@ -1,0 +1,84 @@
+site_name: Ansible By Example
+site_url: https://www.ansiblebyexample.com/
+theme:
+  name: material
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  icon:
+    logo: fontawesome/solid/a
+  favicon: fontawesome/solid/a
+  features:
+    - navigation.footer
+    - navigation.tabs
+  palette:
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Light mode
+      primary: blue
+      accent: deep orange
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Dark mode
+      primary: green
+      accent: deep purple
+
+nav:
+  - Welcome:
+    - About: index.md
+  - Getting Started:
+    - Overview: Getting Started/index.md
+    - Ubuntu 24.04 LTS Noble Numbat: Getting Started/Ubuntu 24.04 LTS Noble Numbat.md
+  - References:
+    - Additional resources: references/RESOURCES.md
+    - Contributors: references/CONTRIBUTORS.md
+  - Blog:
+    - blog/index.md
+
+plugins:
+  - search
+  - blog:
+      blog_dir: ./blog
+      archive_date_format: yyyy
+      archive_url_date_format: yyyy
+      post_url_format: "{slug}"
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+
+extra:
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://example
+    - icon: fontawesome/brands/linkedin
+      link: https://example
+  generator: false
+
+copyright: Copywright &copy; 2025 Luca Berton
