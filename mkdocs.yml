@@ -1,4 +1,4 @@
-site_name: Ansible By Example
+site_name: Ansible By Examples
 site_url: https://www.ansiblebyexamples.com/
 theme:
   name: material
@@ -36,10 +36,14 @@ nav:
     - About: index.md
   - Getting Started:
     - Overview: Getting Started/index.md
-    - Ubuntu 24.04 LTS Noble Numbat: Getting Started/Ubuntu 24.04 LTS Noble Numbat.md
-  - References:
-    - Additional resources: references/RESOURCES.md
-    - Contributors: references/CONTRIBUTORS.md
+    - Ubuntu 24.04 LTS: Getting Started/Ubuntu 24.04 LTS.md
+    - Windows Hosts: Getting Started/Windows Hosts.md
+  - Playbook:
+    - Overview: Playbook/index.md
+    - Using Date Time and Timestamp in Ansible Playbook: Playbook/Using Date Time and Timestamp in Ansible Playbook.md
+  - Materials:
+    - Overview: Materials/index.md
+    - Books: Materials/books.md
   - Blog:
     - blog/index.md
 

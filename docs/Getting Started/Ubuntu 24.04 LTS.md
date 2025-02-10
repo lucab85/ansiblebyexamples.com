@@ -4,6 +4,11 @@ In the rapidly evolving landscape of IT infrastructure management, Ansible emerg
 
 The integration of Ansible into Ubuntu systems provides significant security benefits. By automating the patch management process, Ansible ensures that all systems are up-to-date with the latest security patches, reducing the risk of vulnerabilities. Additionally, Ansible's agentless architecture minimizes the system's attack surface, as it does not require additional software installed on the client machines.
 
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/1LhV87kjHlo"
+frameborder="0" allowfullscreen>
+</iframe>
+
 ## Instructions
 
 Here is a step-by-step guide to securely connect to an Ubuntu 24.04 server and install Ansible for automation tasks:
