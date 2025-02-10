@@ -1,3 +1,11 @@
+---
+title: "How to Install Ansible on Ubuntu 24.04 LTS Noble Numbat"
+summary: "Learn how to install Ansible on Ubuntu 24.04 LTS (Noble Numbat) with a straightforward `sudo apt install ansible` command."
+authors:
+    - luca
+date: 2024-04-22
+---
+
 ## Introduction
 
 In the rapidly evolving landscape of IT infrastructure management, Ansible emerges as a beacon of efficiency and simplicity. This open-source tool, championed by Red Hat, automates complex IT tasks and provides a user-friendly interface that simplifies the process of managing large-scale systems. This article delves into the practical application of Ansible in managing Ubuntu systems, using a real-world session log to illustrate its integration and efficacy.

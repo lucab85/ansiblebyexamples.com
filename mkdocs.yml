@@ -32,15 +32,24 @@ theme:
       accent: deep purple
 
 nav:
-  - Welcome:
-    - About: index.md
-  - Getting Started:
-    - Overview: Getting Started/index.md
-    - Ubuntu 24.04 LTS: Getting Started/Ubuntu 24.04 LTS.md
-    - Windows Hosts: Getting Started/Windows Hosts.md
-  - Playbook:
-    - Overview: Playbook/index.md
-    - Using Date Time and Timestamp in Ansible Playbook: Playbook/Using Date Time and Timestamp in Ansible Playbook.md
+  - Homepage:
+    - Homepage: index.md
+  - Setup:
+    - Overview: Setup/index.md
+    - Ubuntu 24.04 LTS: Setup/Ubuntu 24.04 LTS.md
+    - Windows Hosts: Setup/Windows Hosts.md
+  - Basics:
+    - Overview: Basics/index.md
+    - Basics/Break Strings Across Lines in YAML.md
+  - Advanced:
+    - Advanced/index.md
+    - Date Time and Timestamp: Advanced/Date Time and Timestamp in Ansible Playbook.md
+  - Troubleshooting:
+    - Troubleshooting/index.md
+  - Linux:
+    - Linux/index.md
+  - Windows:
+    - Windows/index.md
   - Materials:
     - Overview: Materials/index.md
     - Books: Materials/books.md
@@ -48,12 +57,20 @@ nav:
     - blog/index.md
 
 plugins:
-  - search
+  - search:
+      indexing: 'full'
   - blog:
       blog_dir: ./blog
       archive_date_format: yyyy
       archive_url_date_format: yyyy
       post_url_format: "{slug}"
+  - meta-descriptions:
+      export_csv: false
+      quiet: false
+      enable_checks: false
+      min_length: 50
+      max_length: 160
+      trim: false
 
 markdown_extensions:
   - attr_list
