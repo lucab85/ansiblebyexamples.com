@@ -1,5 +1,5 @@
 site_name: Ansible By Example
-site_url: https://www.ansiblebyexample.com/
+site_url: https://www.ansiblebyexamples.com/
 theme:
   name: material
   highlightjs: true
